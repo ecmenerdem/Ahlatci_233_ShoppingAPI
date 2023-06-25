@@ -15,7 +15,6 @@ namespace ShoppingAPI.Entity.Poco
         {
             /*Lazy Loading -- Eager Loading*/
            Orders =  new HashSet<Order>();
-          
         }
 
         public string FirstName { get; set; }
