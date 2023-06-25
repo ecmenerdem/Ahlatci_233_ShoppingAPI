@@ -10,4 +10,9 @@
     <ProjectReference Include="..\ShoppingAPI.Entity\ShoppingAPI.Entity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Concrete\Dapper\" />
+    <Folder Include="Concrete\NHibernate\" />
+  </ItemGroup>
+
 </Project>
