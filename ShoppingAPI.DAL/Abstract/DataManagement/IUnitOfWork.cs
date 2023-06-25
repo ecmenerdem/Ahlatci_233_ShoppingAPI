@@ -9,6 +9,6 @@ namespace ShoppingAPI.DAL.Abstract.DataManagement
 {
     public interface IUnitOfWork
     {
-        Task<int> SaveChangeAsync();
+        Task<int> SaveeeeChangeAsync();
     }
 }
