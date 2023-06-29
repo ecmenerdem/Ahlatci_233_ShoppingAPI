@@ -11,7 +11,7 @@ namespace ShoppingAPI.DAL.Concrete.EntityFramework.Mapping.BaseMap
 {
     public class BaseMap<T>:IEntityTypeConfiguration<T> where T : AuditableEntity
     {
-        public void Configure(EntityTypeBuilder<T> builder)
+        public virtual void Configure(EntityTypeBuilder<T> builder)
         {
             builder.HasKey(q => q.id);
             builder.Property(q => q.id).ValueGeneratedOnAdd();
