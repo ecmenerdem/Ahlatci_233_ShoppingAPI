@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,8 @@ namespace ShoppingAPI.Entity.Poco
            Orders =  new HashSet<Order>();
         }
 
+        //[MaxLength(100)]
+        //[Required]
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
@@ -30,8 +33,6 @@ namespace ShoppingAPI.Entity.Poco
         public string Phone { get; set; }
 
         public string Adress { get; set; }
-
-      
         public virtual IEnumerable<Order> Orders { get; set; }
     }
 }

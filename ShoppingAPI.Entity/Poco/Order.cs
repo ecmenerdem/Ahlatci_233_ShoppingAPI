@@ -19,5 +19,6 @@ namespace ShoppingAPI.Entity.Poco
 
         public virtual User User { get; set;}
 
+
     }
 }

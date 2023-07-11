@@ -16,6 +16,8 @@ namespace ShoppingAPI.DAL.Concrete.EntityFramework.Mapping.BaseMap
             builder.HasKey(q => q.id);
             builder.Property(q => q.id).ValueGeneratedOnAdd();
             builder.Property(q=>q.Guid).ValueGeneratedOnAdd();
+            //builder.Property(q => q.AddedTime).HasDefaultValue(DateTime.Now);
+            //builder.Property(q => q.UpdatedTime).HasDefaultValue(DateTime.Now);
         }
     }
 }
