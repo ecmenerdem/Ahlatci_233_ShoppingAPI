@@ -26,24 +26,26 @@ namespace ShoppingAPI.Business.Concrete
             return Entity;
         }
 
-        public Task<IEnumerable<Category>> GetAllAsync(Expression<Func<Category, bool>> Filter = null, params string[] IncludeProperties)
+        public async Task<IEnumerable<Category>> GetAllAsync(Expression<Func<Category, bool>> Filter = null, params string[] IncludeProperties)
         {
-            throw new NotImplementedException();
+            return await _uow.CategoryRepository.GetAllAsync(Filter, IncludeProperties);
         }
 
-        public Task<Category> GetAsync(Expression<Func<Category, bool>> Filter, params string[] IncludeProperties)
+        public async Task<Category> GetAsync(Expression<Func<Category, bool>> Filter, params string[] IncludeProperties)
         {
-            throw new NotImplementedException();
+            return await _uow.CategoryRepository.GetAsync(Filter, IncludeProperties);
         }
 
-        public Task RemoveAsync(Category Entity)
+        public async Task RemoveAsync(Category Entity)
         {
-            throw new NotImplementedException();
+            await _uow.CategoryRepository.RemoveAsync(Entity);
+            await _uow.SaveChangeAsync();
         }
 
-        public Task UpdateAsync(Category Entity)
+        public async Task UpdateAsync(Category Entity)
         {
-            throw new NotImplementedException();
+            await _uow.CategoryRepository.UpdateAsync(Entity);
+            await _uow.SaveChangeAsync();
         }
     }
 }
