@@ -6,9 +6,4 @@
     <!--<Nullable>enable</Nullable>-->
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ShoppingAPI.DAL\ShoppingAPI.DAL.csproj" />
-    <ProjectReference Include="..\ShoppingAPI.Entity\ShoppingAPI.Entity.csproj" />
-  </ItemGroup>
-
 </Project>
