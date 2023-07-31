@@ -76,7 +76,7 @@ namespace ShoppingAPI.Api.Middleware
         }
     }
 
-    // Extension method used to add the middleware to the HTTP request pipeline.
+    // Extension method used to add the middleware to the HTTP request pipelinee.
     public static class GlobalExceptionMiddlewareExtensions
     {
         public static IApplicationBuilder UseGlobalExceptionMiddleware(this IApplicationBuilder builder)
