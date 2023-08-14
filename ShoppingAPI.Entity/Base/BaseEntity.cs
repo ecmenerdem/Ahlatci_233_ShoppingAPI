@@ -9,7 +9,7 @@ namespace ShoppingAPI.Entity.Base
     public class BaseEntity
     {
         public int id { get; set; }
-        public Guid Guid { get; set; }
+        public Guid Guid { get; set; } = Guid.NewGuid();
         public bool? IsActive { get; set; }
         public bool? IsDeleted { get; set; }      
 

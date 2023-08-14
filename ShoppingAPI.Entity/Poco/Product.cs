@@ -17,6 +17,7 @@ namespace ShoppingAPI.Entity.Poco
         public string Name { get; set; }
         public string Description { get; set; }
         public int CategoryID { get; set; }
+        public string FeaturedImage { get; set; }
 
         public virtual IEnumerable<OrderDetail>OrderDetails { get; set; }
 
